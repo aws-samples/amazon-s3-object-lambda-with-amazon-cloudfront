@@ -1,0 +1,13 @@
+{
+  "name": "exif_js",
+  "version": "1.0.0",
+  "description": "Exif JS Tools",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.154.0",
+    "axios": "^0.27.2",
+    "exif-reader": "^1.0.3",
+    "sharp": "^0.30.7"
+  }
+}
