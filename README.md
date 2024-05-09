@@ -1,5 +1,11 @@
 # Modify images cached in Amazon CloudFront using Amazon S3 Object Lambda
 
+<!-- omit from toc -->
+## As of 2023 March 14, [Amazon S3 Object Lambda supports direct CloudFront integration](https://aws.amazon.com/blogs/aws/new-use-amazon-s3-object-lambda-with-amazon-cloudfront-to-tailor-content-for-end-users/). This removes the need for CloudFront Lambda@Edge.
+
+<!-- omit from toc -->
+### This repository is archived as a result.
+
 This solution lets you dynamically modify images cached in [Amazon CloudFront](https://aws.amazon.com/cloudfront/) via [S3 Object Lambda](https://aws.amazon.com/s3/features/object-lambda/) using [Lambda@Edge](https://aws.amazon.com/lambda/edge/). S3 Object Lambda eliminates the need to create and store derivative copies of your data or to run expensive proxies, all with no changes required to your applications. Amazon CloudFront caches the transformed copies at the edge, enabling low-latency delivery to users.
 
 After deploying the [AWS Cloud Development Kit (CDK)](https://aws.amazon.com/cdk/) application in this repository, you will be able to store images in a private bucket and retrieve images with their EXIF data stripped using a public URL. To further demonstrate the capabilities of this solution, you can specify a query string in the public URL to retrieve only the EXIF data instead of the image.
